@@ -1,0 +1,49 @@
+{
+  "name": "internal-web-components-router",
+  "version": "0.0.1",
+  "description": "Internal components for Ticket Gretchen Web Components",
+  "module": "dist/collection/index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/internalwebcomponentsrouter.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "dev": "stencil build --dev --watch --serve",
+    "prod": "stencil build --dev --watch --serve --prod",
+    "start": "npm run dev",
+    "test": "jest",
+    "test.watch": "jest --watch"
+  },
+  "dependencies": {
+    "@stencil/state-tunnel": "0.0.7"
+  },
+  "devDependencies": {
+    "@stencil/core": "^0.10.0-11",
+    "jest": "^21.2.1",
+    "np": "^2.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malua/internal-web-components-router.git"
+  },
+  "author": "Lukas Mayr",
+  "license": "MIT",
+  "homepage": "",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
