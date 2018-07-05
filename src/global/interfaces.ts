@@ -7,9 +7,6 @@ export interface ActiveRouter {
 export interface LocationSegments {
   pathname?: string;
   index?: number;
-  // state?: any;
-  // key?: string;
-  // query?: { [key: string]: any };
 }
 
 export interface RouterHistory {
@@ -19,12 +16,6 @@ export interface RouterHistory {
   history: LocationSegments[];
   push: (path: string | LocationSegments, state?: any) => void;
   pop: () => void;
-  // replace: (path: string | LocationSegments, state?: any) => void;
-  // go: (n: number) => void;
-  // goBack: () => void;
-  // goForward: () => void;
-  // block: (prompt?: string) => () => void;
-  // listen: (listener: Function) => () => void;
 }
 
 export type Listener = () => void;
