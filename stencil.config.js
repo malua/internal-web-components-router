@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'tgwebcomponentsinternal',
+  namespace: 'internalwebcomponentsrouter',
   outputTargets:[
     { 
       type: 'dist' 

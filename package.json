@@ -32,7 +32,7 @@
   },
   "author": "Lukas Mayr",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/malua/internal-web-components-router",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
